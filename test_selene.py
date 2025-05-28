@@ -18,7 +18,7 @@ def test_selene_find_text():
 
 
 
-def test_selene_type_text():
+def test_selene_impossible_text():
  browser.element('[name="q"]').should(be.blank).type('sadhjlasfhljsdaf').press_enter()
  browser.element('html').should(have.text('По запросу «sadhjlasfhljsdaf» ничего не найдено.'))
 
